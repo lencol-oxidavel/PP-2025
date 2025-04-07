@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-family: Arial;
+    text-align: justify;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.maincontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+/* header */
+header {
+    height: auto;
+    width: 100%;
+    background-color: darkblue;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+
+.clash {
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 100%;
+    font-family: Arial;
+    text-decoration: none;
+    color: aliceblue;
+    flex-grow: 1;
+     
+}
+
+header > div > div > img:first-child {
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+
+.flexh {
+    height: 75px;
+    display: flex;
+}
+.logo {
+    flex-grow: 1;
+}
+.login {
+    flex-grow: 1;
+    width: 100%;
+}
+
+
+/* header */
+
+/* main */
+
+main {
+    width: 70%;
+    background-color: greenyellow;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-grow: 1;
+}
+main > h1 {
+    padding-bottom: 2%;
+}
+main > p {
+    padding-bottom: 3%;
+}
+
+/* main */
+
+/* aside */
+
+aside {
+    width: 30%;
+    background-color: aqua;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: center;
+}
+aside > a > div {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+aside > a > div > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+aside > a > div > img:hover {
+    transform: scale(1.2);
+}
+
+/* aside */
+
+/* footer */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(11, 12, 18);
+}
+
+footer div:first-child {
+
+}
+
+footer > div > a {
+    color: white;
+    text-decoration: none;
+}
+footer > div > a:hover {
+    color: yellow;
+}
+
+.containerf {
+    display: flex;
+    flex-direction: column;
+}
+/* footer */
+
+
+@media only screen and (max-width: 959px) {
+    .clash{
+        font-size: 10px;
+    }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .clash{
+        font-size: 12px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .clash{
+        font-size: 14px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .clash{
+        font-size: 9px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .clash{
+        font-size: 7px;
+    }
+}

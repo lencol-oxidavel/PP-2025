@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neuralink</title>
+    <link rel="icon" type="image/x-icon" href="image\imageb.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div class="container">
     <header>
-        <h1 class="clash"><a href=".\index.php"></a></h1>
-        <h1 class="clash"><a href=""></a></h1>
-        <h1 class="clash"><a href=""></a></h1>
-        <h1 class="clash"><a href=""></a></h1>
+        <div class="flexh">
+            <div class="logo">
+                <img src="image\imageb.png" alt="logo">
+            </div>
+            <img src="" alt="">
+            <b><a class="clash" href=".\index.php">Home</a></b>
+            <b><a class="clash" href=".\produto.php">Produto</a></b>
+            <b><a class="clash" href=".\aplicacoes.php">Aplicações</a></b>
+            <b><a class="clash" href=".\metodologia.php">Metodologia</a></b>
+            <b><a class="clash" href=".\sobrenos.php">Sobre Nós</a></b>
+            <div class="login">
+
+            </div>
+        </div>
     </header>
+
+    
