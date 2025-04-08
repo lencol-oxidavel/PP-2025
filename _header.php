@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
 <div class="container">
     <header>
         <div class="flexh">
             <div class="logo">
                 <img src="image\imageb.png" alt="logo">
             </div>
-            <img src="" alt="">
-            <b><a class="clash" href=".\index.php">Home</a></b>
-            <b><a class="clash" href=".\produto.php">Produto</a></b>
-            <b><a class="clash" href=".\aplicacoes.php">Aplicações</a></b>
-            <b><a class="clash" href=".\metodologia.php">Metodologia</a></b>
-            <b><a class="clash" href=".\sobrenos.php">Sobre Nós</a></b>
+            <a class="clash" href=".\index.php"><b>Home</b></a>
+            <a class="clash" href=".\produto.php"><b>Produto</b></a>
+            <a class="clash" href=".\aplicacoes.php"><b>Aplicações</b></a>
+            <a class="clash" href=".\metodologia.php"><b>Metodologia</b></a>
+            <a class="clash" href=".\sobrenos.php"><b>Sobre Nós</b></a>
             <div class="login">
-                <div class="logincontaine">
-                    <img src="./image/LoginB.png" alt="Login">
+                <div class="logincontainer">
+                    <img src="./image/PersonB.png" alt="Login">
+                    <p class="plogin">Registrar ou fazer Login</p>
                 </div>
             </div>
         </div>

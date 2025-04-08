@@ -8,5 +8,7 @@
             <a class="af" target="_blank" href="https://github.com/">Saiba Mais</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

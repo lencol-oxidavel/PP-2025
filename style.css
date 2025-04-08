@@ -15,7 +15,7 @@ p {
 }
 .maincontainer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: row;
     width: 100%
 }
 
@@ -31,37 +31,45 @@ header {
 
 
 .clash {
+    width: auto;
+    
     float: left;
-    padding-left: 20px;
-    padding-top: 20px;
     font-size: 100%;
     font-family: Arial;
     text-decoration: none;
     color: aliceblue;
     flex-grow: 1;
-     
+    align-items: center;
 }
 
 header > div > div > img:first-child {
     height: auto;
-    width: 30%;
+    width: 65px;
     object-fit: cover;
     position: relative;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
+/* todo header */
 .flexh {
     height: 75px;
     display: flex;
+    width: 100%;
 }
 .logo {
-    flex-grow: 1;
+    width: 15%;
 }
 .login {
-    flex-grow: 1;
-    width: 100%;
+    flex-grow: 4;
+}
+.logincontainer {
+    display: flex;
+    color: white;
+}
+.logincontainer > img {
+    width: 10%;
 }
 
 
