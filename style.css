@@ -27,24 +27,35 @@ header {
     position: sticky;
     z-index: 100;
     top: 0;
+    justify-content: center;
+    display: flex;
+
 }
 
+.dclash {
+    display: flex;
+    flex-grow: 6;
+    
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial;
+    color: aliceblue;
+}
 
 .clash {
     width: auto;
-    
-    float: left;
+    align-content: flex-end;
+    display: flex;
     font-size: 100%;
-    font-family: Arial;
-    text-decoration: none;
-    color: aliceblue;
     flex-grow: 1;
     align-items: center;
 }
 
 header > div > div > img:first-child {
     height: auto;
-    width: 65px;
+    width: 30%;
     object-fit: cover;
     position: relative;
     top:50%;
@@ -62,7 +73,9 @@ header > div > div > img:first-child {
     width: 15%;
 }
 .login {
-    flex-grow: 4;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
 }
 .logincontainer {
     display: flex;
@@ -83,7 +96,7 @@ main {
     padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
-    flex-grow: 1;
+    padding: 5%;
 }
 main > h1 {
     padding-bottom: 2%;
@@ -97,15 +110,14 @@ main > p {
 /* aside */
 
 aside {
+    display: flex;
     width: 30%;
     background-color: aqua;
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 }
-aside > a > div {
+.imgad {
     max-width: 100%;
     height: auto;
     overflow: hidden;
@@ -114,14 +126,14 @@ aside > a > div {
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
 }
-aside > a > div > img {
+.imga {
     width: 100%;
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
     transform-origin: center center;
 }
-aside > a > div > img:hover {
+.imga:hover {
     transform: scale(1.2);
 }
 

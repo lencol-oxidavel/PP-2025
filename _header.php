@@ -16,11 +16,14 @@
             <div class="logo">
                 <img src="image\imageb.png" alt="logo">
             </div>
-            <a class="clash" href=".\index.php"><b>Home</b></a>
-            <a class="clash" href=".\produto.php"><b>Produto</b></a>
-            <a class="clash" href=".\aplicacoes.php"><b>Aplicações</b></a>
-            <a class="clash" href=".\metodologia.php"><b>Metodologia</b></a>
-            <a class="clash" href=".\sobrenos.php"><b>Sobre Nós</b></a>
+            <div class="dclash">
+                <b class="clash"><a href=".\index.php">Home</a></b>
+                <b class="clash"><a href=".\produto.php">Produto</a></b>
+                <b class="clash"><a href=".\aplicacoes.php">Aplicações</a></b>
+                <b class="clash"><a href=".\metodologia.php">Metodologia</a></b>
+                <b class="clash"><a href=".\metodologia.php">Metodologia</a></b>
+                <b class="clash"><a href=".\sobrenos.php">Sobre Nós</a></b>
+            </div>
             <div class="login">
                 <div class="logincontainer">
                     <img src="./image/PersonB.png" alt="Login">
