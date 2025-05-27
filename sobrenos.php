@@ -1,5 +1,5 @@
 <?php
-include_once '_header.php';
+include_once './includes/_header.php';
 ?>
 
 
@@ -9,8 +9,8 @@ include_once '_header.php';
     </main>
  
 <?php
-include_once '_aside.php';
+include_once './includes/_aside.php';
 ?>
 <?php
-include_once '_footer.php';
+include_once './includes/_footer.php';
 ?>
