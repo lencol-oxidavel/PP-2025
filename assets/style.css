@@ -32,6 +32,8 @@ header {
 
 }
 
+
+
 .dclash {
     display: flex;
     flex-grow: 6;
@@ -56,6 +58,16 @@ a {
 header > div > div > img:first-child {
     height: auto;
     width: 30%;
+    object-fit: cover;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.Solucao_da_crise_existencial_da_lupa{
+    height: auto;
+    width: 50%;
     object-fit: cover;
     position: relative;
     top:50%;
