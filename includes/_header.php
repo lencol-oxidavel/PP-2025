@@ -23,7 +23,7 @@
                 <b class="clash"><a href=".\metodologia.php">Metodologia</a></b>
                 <b class="clash"><a href=".\metodologia.php">Metodologia</a></b>
                 <b class="clash"><a href=".\sobrenos.php">Sobre Nós</a></b>
-                <a class="clash" href=""><img class="Solucao_da_crise_existencial_da_lupa" src="./image/Lupa_branca_maior.png" alt="" srcset=""></a>
+                <a class="clash" href=".\pesquisa.php"><img class="Solucao_da_crise_existencial_da_lupa" src="./image/Lupa_branca_maior.png" alt="" srcset=""></a>
             </div>
             <div class="login">
                 <a href="./cadastrologin.php">
