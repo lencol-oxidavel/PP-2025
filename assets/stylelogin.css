@@ -12,8 +12,9 @@ select {
 }
 
 input, select {
-    margin-bottom: 15px;
-    padding: 3px;
+    margin-bottom: 8%;
+    padding: 2%;
+    border: 1px solid black;
 }
 
 .cad-form, .log-form {
@@ -24,6 +25,7 @@ input, select {
 h2{
     padding-left: 10px;
     padding-top: 10px;
+    font-style: normal;
 }
 button {
     background-color: white;
@@ -31,6 +33,9 @@ button {
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid black;
+}
+.fradius {
+    border-radius: 5px;
 }
 
 .login, .cadastro {
