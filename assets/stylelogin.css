@@ -27,6 +27,17 @@ h2{
     padding-top: 10px;
     font-style: normal;
 }
+
+@media (max-width: 650px) {
+    label {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+}
+
 button {
     background-color: white;
     border-radius: 5px;
