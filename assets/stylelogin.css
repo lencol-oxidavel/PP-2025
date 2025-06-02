@@ -15,7 +15,7 @@ select {
 .input, .select {
     width: 90%;
     height: auto;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
     padding: 2%;
     border: 1px solid black;
 }
@@ -32,8 +32,8 @@ label {
 
 h2 {
     font-size: 1.65vw;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 5%;
+    padding-top: 4%;
     font-style: normal;
 }
 input::placeholder, select {
@@ -60,6 +60,7 @@ input::placeholder, select {
 }
 
 button {
+    height: 3vw;
     font-size: 1.2vw;
     background-color: white;
     border-radius: 5px;
@@ -74,7 +75,7 @@ button {
 .login, .cadastro {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
     border-radius: 7px;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: aliceblue;
@@ -96,14 +97,58 @@ html {
 body {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center;    
     width: 100%;
     height: auto;
     background: #020024;
-    background: linear-gradient(
-    90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(290deg, #0700b8 0%, #00ff88 100%);
+    /*
+    background: linear-gradient(343deg, rgb(36 0 0) 0%, rgb(9 115 121) 50%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+
+    */
+    
 }
 
 .check {
+    display: flex;
+    align-items: center;
     margin-bottom: 5%;
+    gap: 5%;
 }
+
+.voltar {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+@media (max-width: 650px) {
+    .voltar {
+        font-size: 2.5vw;
+        top: 3vw;
+        left: 3vw;
+        padding: 0.6em 1.2em;
+    }
+    
+}
+@media (max-width: 450px) {
+    .voltar {
+        font-size: 2.8vw;
+        top: 3vw;
+        left: 3vw;
+        padding: 0.6em 1.2em;
+    }
+    
+}
+
