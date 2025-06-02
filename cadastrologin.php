@@ -40,7 +40,7 @@
     <div class="login">
         <h2>Login</h2>
         <form class="log-form" action="" method="">
-            <label for="Email">Email</label>
+            <label for="Email">Email</label> 
             <input class="fradius input" type="email" name="Email" placeholder="Email" required>
             <label for="Senha">Senha</label>
             <input class="fradius input" type="password" name="Senha" placeholder="Senha" required>
