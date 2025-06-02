@@ -4,6 +4,7 @@
 }
 
 .containerr {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -11,7 +12,9 @@ select {
     margin-bottom: 10px;
 }
 
-input, select {
+.input, .select {
+    width: 100%;
+    height: auto;
     margin-bottom: 8%;
     padding: 2%;
     border: 1px solid black;
@@ -22,11 +25,28 @@ input, select {
     flex-direction: column;
     padding: 20px;
 }
-h2{
+
+label {
+    font-size: 1.4vw;
+}
+
+h2 {
+    font-size: 1.65vw;
     padding-left: 10px;
     padding-top: 10px;
     font-style: normal;
 }
+
+@media (max-width: 650px) {
+    label {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+}
+
 button {
     background-color: white;
     border-radius: 5px;
@@ -39,7 +59,9 @@ button {
 }
 
 .login, .cadastro {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
     border-radius: 7px;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: aliceblue;
@@ -47,6 +69,7 @@ button {
 }
 .login {
     margin-left: 3%;
+    align-self: center;
 }
 
 .cadastro {
@@ -63,4 +86,8 @@ body {
     background: #020024;
     background: linear-gradient(
     90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+
+.check {
+    margin-bottom: 5%;
 }
