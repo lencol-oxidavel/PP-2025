@@ -11,43 +11,28 @@
 <div class="containerr">
     <div class="cadastro">
         <h2>Cadastro</h2>
-        <form class="cad-form" action="" method="">
+        <form class="cad-form" action="">
             <input type="hidden" name="">
             <label for="Nome">Nome: </label>
-            <input class="fradius input" type="text" name="Nome" placeholder="Nome" required>
+            <input class="fradius" type="text" name="Nome" required>
             <label for="Email">Email: </label>
-            <input class="fradius input" type="email" name="Email" placeholder="Email" required>
+            <input class="fradius" type="email" name="Email" required>
             <label for="Senha">Senha: </label>
-            <input class="fradius input" type="password" name="Senha" placeholder="Senha" required>
+            <input class="fradius" type="password" name="Senha" required>
             <label for="Conf">Confirmar senha:</label>
-            <input class="fradius input" type="password" name="Conf" placeholder="Confirmar Senha" required>
-            <label for="Sexo">Sexo: </label>
-            <select class="fradius select" name="Sexo">
+            <input class="fradius" type="password" name="Conf" required>
+            <select class="fradius" name="">
                 <option value="" selected disabled>Sexo</option>
                 <option value="F">Feminino</option>
                 <option value="M">Masculino</option>
             </select>
-            <label for="Telefone">Telefone: </label>
-            <input class="fradius input" type="tel" name="Telefone" pattern="[0-9]{00}[0-9]{2}-[0-9]{4-3}-[0-9]{2}-[0-9]{3}" placeholder="00 00 999999999" required>
-            <div class="check">
-                <label for="CheckJ">Jornalista</label>
-                <input type="checkbox" name="CheckJ" id="">
-            </div>
             <button class="button" type="submit"><span>Cadastrar</span></button>
         </form>
     </div>
         
     <div class="login">
         <h2>Login</h2>
-        <form class="log-form" action="" method="">
-            <label for="Email">Email</label>
-            <input class="fradius input" type="email" name="Email" placeholder="Email" required>
-            <label for="Senha">Senha</label>
-            <input class="fradius input" type="password" name="Senha" placeholder="Senha" required>
-            <button class="button" type="submit"><span>Login</span></button>
-
-
-        </form>
+        <form class="log-form" action=""></form>
     </div>
 </div>
 </body>
