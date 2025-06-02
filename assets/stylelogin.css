@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.containerr {
+    display: flex;
+    justify-content: center;
+}
+select {
+    margin-bottom: 10px;
+}
+
+input, select {
+    margin-bottom: 8%;
+    padding: 2%;
+    border: 1px solid black;
+}
+
+.cad-form, .log-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+h2{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-style: normal;
+}
+button {
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+.fradius {
+    border-radius: 5px;
+}
+
+.login, .cadastro {
+    width: auto;
+    border-radius: 7px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    margin-top: 4%;
+}
+.login {
+    margin-left: 3%;
+}
+
+.cadastro {
+    margin-right: 3%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: #020024;
+    background: linear-gradient(
+    90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}

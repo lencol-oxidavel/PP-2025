@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuralink</title>
     <link rel="icon" type="image/x-icon" href="image\imageb.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
 
@@ -25,10 +25,12 @@
                 <b class="clash"><a href=".\sobrenos.php">Sobre Nós</a></b>
             </div>
             <div class="login">
-                <div class="logincontainer">
-                    <img src="./image/PersonB.png" alt="Login">
-                    <p class="plogin">Registrar ou fazer Login</p>
-                </div>
+                <a href="./cadastrologin.php">
+                    <div class="logincontainer">
+                        <img src="./image/PersonB.png" alt="Login">
+                        <p class="plogin">Registrar ou fazer Login</p>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
