@@ -41,6 +41,15 @@ header {
     justify-content: space-between;
 }
 
+.Solucao_da_crise_existencial_da_lupa{
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 
 .dclash {
     display: flex;
@@ -74,12 +83,21 @@ header > div > div > img:first-child {
     position: relative;
 }
 
+.Solucao_da_crise_existencial_da_lupa{
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 .logo, .login {
     width: 20vw;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .login {
     align-items: flex-end;
