@@ -71,7 +71,6 @@ header {
 
 .dclash {
     display: flex;
-    flex-grow: 6;
     
 }
 
@@ -105,12 +104,19 @@ header > div > div > img:first-child {
     position: relative;
 }
 
-.logo, .login {
-    width: 20vw;
+.logo {
+    display: flex;
+    width: 15vw;
     align-items: center;
     justify-content: center;
 }
 
+.login {
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+}
 
 .login {
     align-items: flex-end;
