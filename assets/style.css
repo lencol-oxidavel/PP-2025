@@ -42,13 +42,31 @@ header {
 }
 
 .Solucao_da_crise_existencial_da_lupa{
-    height: auto;
+    height: auto;   
     width: 50%;
     object-fit: cover;
     position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    pointer-events: auto;
+}
+.clash.pesq {
+    padding: 0.6vw 1vw;
+}
+.clash.pesq span {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.clash.pesq span p {
+    margin: 0;
+    font-size: 1.1vw;
+    color: white;
+}
+
+
+.clash.pesq img {
+    width: 2.5vw;
+    height: auto;
+    display: block;
 }
 
 .dclash {
@@ -74,6 +92,10 @@ a {
     text-decoration: none;
     color: white;
     background-color: transparent;
+    pointer-events: none;
+}
+.clash span {
+    pointer-events: auto;
 }
 
 header > div > div > img:first-child {
@@ -83,15 +105,6 @@ header > div > div > img:first-child {
     position: relative;
 }
 
-.Solucao_da_crise_existencial_da_lupa{
-    height: auto;
-    width: 50%;
-    object-fit: cover;
-    position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
 .logo, .login {
     width: 20vw;
     align-items: center;
@@ -150,7 +163,7 @@ aside {
     flex-grow: 1;
 }
 .imgad {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     position: relative;

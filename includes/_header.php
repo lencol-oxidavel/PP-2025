@@ -19,12 +19,17 @@
             </div>
 
             <nav class="dclash">
-                <a class="clash" href=".\index.php">Home</a>
-                <a class="clash" href=".\produto.php">Produto</a>
-                <a class="clash" href=".\aplicacoes.php">Aplicações</a>
-                <a class="clash" href=".\metodologia.php">Metodologia</a>
-                <a class="clash" href=".\sobrenos.php">Sobre Nós</a>
-                <a class="clash" href=".\pesquisa.php"><img class="Solucao_da_crise_existencial_da_lupa" src="./image/Lupa_branca_maior.png" alt="" srcset=""></a>
+                <a class="clash" href=".\index.php"><span>Home</span></a>
+                <a class="clash" href=".\produto.php"><span>Produto</span></a>
+                <a class="clash" href=".\aplicacoes.php"><span>Aplicações</span></a>
+                <a class="clash" href=".\metodologia.php"><span>Metodologia</span></a>
+                <a class="clash" href=".\sobrenos.php"><span>Sobre Nós</span></a>
+                <a class="clash pesq" href=".\pesquisa.php">
+                    <span>
+                        <img class="Solucao_da_crise_existencial_da_lupa" src="./image/Lupa_branca_maior.png" alt="" srcset="">
+                        <p>Pesquisar</p>
+                    </span>      
+                </a>
             </nav>
 
 
