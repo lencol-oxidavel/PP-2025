@@ -2,7 +2,7 @@
     --padding: 14px;
     
     width: 70%;
-    height:60px; 
+    height: 40px; 
     display: flex;
     align-items: center;
     padding: var(--padding);
@@ -46,4 +46,39 @@ body {
 html{
 
     height: 100%;
+}
+
+.voltar {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+@media (max-width: 650px) {
+    .voltar {
+        font-size: 2.5vw;
+        top: 3vw;
+        left: 3vw;
+        padding: 0.6em 1.2em;
+    }
+    
+}
+@media (max-width: 450px) {
+    .voltar {
+        font-size: 2.8vw;
+        top: 3vw;
+        left: 3vw;
+        padding: 0.6em 1.2em;
+    }
+    
 }
