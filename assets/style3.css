@@ -1,6 +1,7 @@
 .search{
     --padding: 14px;
-    
+    max-width: 600px;
+    min-width: 250px;
     width: 70%;
     height: 40px; 
     display: flex;
@@ -9,6 +10,7 @@
     border-radius: 30px;
     background: #f6f6f6;
     transition: box-shadow 0.25s;
+    box-sizing: border-box;
 }
 
 .search:focus-within{
@@ -16,7 +18,7 @@
 }
 
 .search-input{
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'Lexend', sans-serif;
     color: #333333; 
     margin-left: var(--padding);
@@ -41,11 +43,28 @@ body {
     margin: 0; 
     background-color: #ffffff;
     margin-top: 6%; 
+    padding: 0 1rem;
 }
 
 html{
 
     height: 100%;
+}
+
+@media (max-width: 480px) {
+    .search {
+        height: 35px;
+        padding: 0px;
+        min-width: 170px;
+    }
+
+    .search-input {
+        font-size: 0.70rem;
+    }
+
+    .search-icon {
+        font-size: 20px;
+    }
 }
 
 .voltar {
