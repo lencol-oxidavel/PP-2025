@@ -24,11 +24,9 @@
         </div>
         <!-- usar while loop do php com banco de dados para mostrar os 10 resultados mais parecidos -->
         <div class="Resultado-Texto">
-            <h2>titulo</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Quos suscipit officiis sint sapiente, itaque esse dolor 
-                quae ipsa voluptates aliquam rem quaerat illo quis beatae labore 
-                consequuntur temporibus cupiditate corporis.
+            <h2>Gato Fofo é flagrado durante bocejo.</h2>
+            <p>
+                Dono tira foto do seu gato enquanto ele boceja.
             </p>
         </div>
     </div>
