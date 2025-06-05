@@ -22,6 +22,7 @@
         <div class="Resultado-img">
             <img src="./image/gago2.png" alt="Imagem do resultado">
         </div>
+        <!-- usar while loop do php com banco de dados para mostrar os 10 resultados mais parecidos -->
         <div class="Resultado-Texto">
             <h2>titulo</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
