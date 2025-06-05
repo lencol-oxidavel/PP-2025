@@ -12,11 +12,26 @@
 
     <a href="javascript:history.back()" class="voltar">&#10229; Voltar</a>
 
-    <form>
+    <form class="search-form">
         <div class="search">
            <span class="search-icon material-symbols-outlined">search</span>
            <input class="search-input" type="search" placeholder="Pesquisar">
         </div>
-    </form>    
+    </form>
+    <div class="Resultado">
+        <div class="Resultado-img">
+            <img src="./image/gago2.png" alt="Imagem do resultado">
+        </div>
+        <div class="Resultado-Texto">
+            <h2>titulo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Quos suscipit officiis sint sapiente, itaque esse dolor 
+                quae ipsa voluptates aliquam rem quaerat illo quis beatae labore 
+                consequuntur temporibus cupiditate corporis.
+            </p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

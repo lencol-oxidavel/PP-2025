@@ -165,7 +165,7 @@ aside {
     padding: 2% 0 2% 0;
     display: flex;
     width: 30%;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(46, 46, 46);
     flex-direction: column;
     box-sizing: border-box;
 }
