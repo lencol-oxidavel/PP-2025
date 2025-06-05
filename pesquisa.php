@@ -26,7 +26,7 @@
         <div class="Resultado-Texto">
             <h2>Gato Fofo é flagrado durante bocejo.</h2>
             <p>
-                Dono tira foto do seu gato enquanto ele boceja.
+                O gato boceja um bocejo bocejante, caracterizado por um bocejar contínuo, prolongado, estendido, onde ele boceja enquanto realiza o ato do bocejo, que é, por definição, o bocejo do bocejo sendo bocejado, no momento em que o bocejo acontece, ocorre, se manifesta, se expressa, se revela, em sua forma mais bocejável de bocejo. Nesse exato instante, precisamente nesse momento específico e pontual do bocejo em andamento, o dono, o proprietário, o tutor, a pessoa responsável pelo gato, utiliza um dispositivo fotográfico, ou seja, uma câmera, um aparelho de captura de imagens, para tirar, registrar, capturar, eternizar uma foto, uma fotografia, uma imagem visual, da cena visual do bocejo bocejado pelo gato em pleno bocejo, clicando no botão de captura da câmera no momento em que o bocejo está bocejando, durante o bocejo, no meio do bocejo, enquanto o bocejo está em pleno bocejo..
             </p>
         </div>
     </div>
