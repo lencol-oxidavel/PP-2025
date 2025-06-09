@@ -1,5 +1,6 @@
 * {
     font-family: Arial;
+    text-align: justify;
 }
 
 .search-form {
@@ -65,6 +66,9 @@
 
 .Resultado-img {
     width: 20%;
+    display: flex;
+    align-items: center;
+
 }
 
 .Resultado-img img {
@@ -77,7 +81,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 3%;
+    padding: 3% 3% 3% 1%;
     overflow: hidden;
     box-sizing: border-box;
 }
