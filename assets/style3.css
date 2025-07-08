@@ -52,6 +52,24 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+a.Resultado {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none; /* remove o sublinhado */
+    color: inherit; /* herda a cor padrão do texto */
+    transition: background-color 0.2s;
+}
+
+a.Resultado:hover {
+    background-color: #f5f5f5;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .Resultado {
     display: flex;
     background-color: #f4f4f4;

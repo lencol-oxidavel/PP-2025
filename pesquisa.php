@@ -49,21 +49,21 @@ $resultado = mysqli_query($conn, $sql);
 
 <?php
 if (mysqli_num_rows($resultado) > 0) {
-
-    // Se pesquisou, mostra só resultados da busca
-    // Se não pesquisou, mostra notícias recentes
-
     while ($dado = mysqli_fetch_assoc($resultado)) {
+        $id = $dado['noticiaID'];
+        $titulo = htmlspecialchars($dado['titulo']);
+        $descricao = htmlspecialchars($dado['descricao']);
+        $foto = htmlspecialchars($dado['foto']);
 ?>
-        <div class="Resultado">
+        <a href="noticia.php?noticiaID=<?php echo $id; ?>" class="Resultado">
             <div class="Resultado-img">
-                <img src="./image/<?php echo htmlspecialchars($dado['foto']); ?>" alt="Imagem do resultado" />
+                <img src="./image/<?php echo $foto; ?>" alt="Imagem do resultado" />
             </div>
             <div class="Resultado-Texto">
-                <h2><?php echo htmlspecialchars($dado['titulo']); ?></h2>
-                <p><?php echo htmlspecialchars($dado['descricao']); ?></p>
+                <h2><?php echo $titulo; ?></h2>
+                <p><?php echo $descricao; ?></p>
             </div>
-        </div>
+        </a>
 <?php
     }
 } else {
