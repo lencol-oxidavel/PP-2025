@@ -153,7 +153,7 @@ header > div > div > img:first-child {
 
 main {
     width: 70%;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-left: 3%;
     padding-right: 3%;
     padding: 5%;
@@ -165,12 +165,12 @@ main {
 }
 
 main > h1 {
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     margin-bottom: 0.5rem;
 }
 
 main > p {
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 main .data-publicacao {
