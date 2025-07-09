@@ -104,7 +104,7 @@ a {
     pointer-events: auto;
 }
 .clash:hover {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
 
 header > div > div > img:first-child {
@@ -212,10 +212,6 @@ main .texto-noticia {
   text-align: justify;
   color: #eee;
 }
-
-
-
-
 
 
 /* main */

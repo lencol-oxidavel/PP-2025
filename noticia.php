@@ -12,18 +12,22 @@ if (!isset($_GET['noticiaID']) || !is_numeric($_GET['noticiaID'])) {
 
 $noticiaID = (int) $_GET['noticiaID'];
 
-// Busca a notícia no banco de dados
-$sql = "SELECT titulo, descricao, texto, foto, data_liberacao FROM Noticias WHERE noticiaID = $noticiaID LIMIT 1";
-$resultado = mysqli_query($conn, $sql);
+// Usando prepared statements para evitar SQL Injection
+$stmt = $conn->prepare("SELECT titulo, descricao, texto, foto, data_criacao FROM noticias WHERE noticiaID = ? LIMIT 1");
+$stmt->bind_param("i", $noticiaID);
+$stmt->execute();
+$resultado = $stmt->get_result();
 
-if (!$resultado || mysqli_num_rows($resultado) == 0) {
+if (!$resultado || $resultado->num_rows === 0) {
     echo "<p class='no-results'>Notícia não encontrada.</p>";
     include_once './includes/_aside.php';
     include_once './includes/_footer.php';
     exit;
 }
 
-$noticia = mysqli_fetch_assoc($resultado);
+$noticia = $resultado->fetch_assoc();
+
+$stmt->close();
 ?>
 
 <div class="maincontainer">
@@ -31,12 +35,14 @@ $noticia = mysqli_fetch_assoc($resultado);
         <article class="noticia-completa">
             <h1><?php echo htmlspecialchars($noticia['titulo']); ?></h1>
             <p class="data">
-                Publicado em <?php echo date('d/m/Y H:i', strtotime($noticia['data_liberacao'])); ?>
+                Publicado em <?php echo date('d/m/Y H:i', strtotime($noticia['data_criacao'])); ?>
             </p>
 
+            <?php if (!empty($noticia['foto'])): ?>
             <div class="imagem-noticia">
                 <img src="./image/<?php echo htmlspecialchars($noticia['foto']); ?>" alt="<?php echo htmlspecialchars($noticia['titulo']); ?>">
             </div>
+            <?php endif; ?>
 
             <p class="descricao">
                 <?php echo nl2br(htmlspecialchars($noticia['descricao'])); ?>

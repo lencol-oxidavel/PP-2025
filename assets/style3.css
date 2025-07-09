@@ -58,8 +58,8 @@ a.Resultado {
     gap: 1rem;
     padding: 1rem;
     border-bottom: 1px solid #ccc;
-    text-decoration: none; /* remove o sublinhado */
-    color: inherit; /* herda a cor padrão do texto */
+    text-decoration: none;
+    color: inherit;
     transition: background-color 0.2s;
 }
 
@@ -104,7 +104,6 @@ a.Resultado:hover {
     box-sizing: border-box;
 }
 
-/* Seções separadas para título e texto */
 .Resultado-Texto h2 {
     font-size: 1.1rem;
     font-weight: bold;
@@ -194,4 +193,36 @@ html{
         left: 3vw;
         padding: 0.6em 1.2em;
     }
+}
+
+/* paginação */
+.paginacao {
+  text-align: center;
+  margin: 15px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.pagina-link {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 4px 8px;
+  color: #007bff;
+  background: #e0e0e0;
+  border-radius: 3px;
+  text-decoration: none;
+  min-width: 28px;
+  box-sizing: border-box;
+}
+
+.pagina-link:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.pagina-link.ativa {
+  background: #0056b3;
+  color: #fff;
+  font-weight: 600;
+  pointer-events: none;
 }

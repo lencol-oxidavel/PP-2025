@@ -3,19 +3,41 @@ include_once './includes/_conexao.php';
 
 $busca = '';
 $where = "";
+
 if (isset($_GET['busca']) && trim($_GET['busca']) !== '') {
     $busca = mysqli_real_escape_string($conn, $_GET['busca']);
     $where = " WHERE titulo LIKE '%$busca%' OR descricao LIKE '%$busca%' ";
 }
 
-// Se não pesquisou, traz as 10 notícias mais recentes, se pesquisou traz os resultados da busca
+// Paginação
+$por_pagina = 10;
+$pagina_atual = isset($_GET['pagina']) && is_numeric($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+$offset = ($pagina_atual - 1) * $por_pagina;
+
+// Contar total de resultados
+$total_query = "SELECT COUNT(*) as total FROM noticias $where";
+$total_result = mysqli_query($conn, $total_query);
+
+if (!$total_result) {
+    die("Erro na consulta: " . mysqli_error($conn));
+}
+
+$total_row = mysqli_fetch_assoc($total_result);
+$total = $total_row['total'];
+$total_paginas = ceil($total / $por_pagina);
+
+// Buscar resultados da página atual
 $sql = "SELECT noticiaID, titulo, descricao, foto
-        FROM Noticias
+        FROM noticias
         $where
-        ORDER BY data_liberacao DESC
-        LIMIT 10";
+        ORDER BY data_criacao DESC
+        LIMIT $por_pagina OFFSET $offset";
 
 $resultado = mysqli_query($conn, $sql);
+
+if (!$resultado) {
+    die("Erro na consulta: " . mysqli_error($conn));
+}
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +54,6 @@ $resultado = mysqli_query($conn, $sql);
 
 <a href="index.php" class="voltar">&#10229; Voltar</a>
 
-<!-- Formulário de busca usando GET -->
 <form class="search-form" method="GET" action="">
     <div class="search">
         <span class="search-icon material-symbols-outlined">search</span>
@@ -74,6 +95,41 @@ if (mysqli_num_rows($resultado) > 0) {
     }
 }
 ?>
+
+<?php if ($total_paginas > 1): ?>
+    <div class="paginacao">
+        <?php
+        $max_paginas_exibir = 10;
+
+        if ($total_paginas <= $max_paginas_exibir) {
+            $inicio = 1;
+            $fim = $total_paginas;
+        } else {
+            if ($pagina_atual < 6) {
+                $inicio = 1;
+                $fim = $max_paginas_exibir;
+            } else {
+                $inicio = $pagina_atual - 4;
+                $fim = $pagina_atual + 5;
+
+                if ($fim > $total_paginas) {
+                    $fim = $total_paginas;
+                    $inicio = $fim - ($max_paginas_exibir - 1);
+                    if ($inicio < 1) {
+                        $inicio = 1;
+                    }
+                }
+            }
+        }
+
+        for ($i = $inicio; $i <= $fim; $i++):
+        ?>
+            <a class="pagina-link <?php echo $i === $pagina_atual ? 'ativa' : ''; ?>" href="?busca=<?php echo urlencode($busca); ?>&pagina=<?php echo $i; ?>">
+                <?php echo $i; ?>
+            </a>
+        <?php endfor; ?>
+    </div>
+<?php endif; ?>
 
 </body>
 </html>
