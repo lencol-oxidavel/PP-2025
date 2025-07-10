@@ -11,3 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+function atualizarImagem() {
+            const urlInput = document.getElementById('url-imagem');
+            const imagem = document.getElementById('preview-imagem');
+
+            const novaURL = urlInput.value.trim();
+
+            if (novaURL !== '') {
+                imagem.src = novaURL;
+            }
+        };

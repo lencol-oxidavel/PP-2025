@@ -4,7 +4,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: 0.2 linear;
 }
 
@@ -348,4 +347,26 @@ footer > div > a:hover {
     header {
         height: 12vw;
     }
+}
+
+/* editor */
+
+#url-imagem {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#buttonedit {
+    height: 3vw;
+    font-size: 1.2vw;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    width: 15%;
+}
+
+textarea {
+    width: 100%;
 }

@@ -40,7 +40,11 @@ $stmt->close();
 
             <?php if (!empty($noticia['foto'])): ?>
             <div class="imagem-noticia">
-                <img src="./image/<?php echo htmlspecialchars($noticia['foto']); ?>" alt="<?php echo htmlspecialchars($noticia['titulo']); ?>">
+                <?php
+                    $foto = $noticia['foto'];
+                    $fotoURL = (filter_var($foto, FILTER_VALIDATE_URL)) ? $foto : './image/' . $foto;
+                ?>
+                <img src="<?php echo htmlspecialchars($fotoURL); ?>" alt="<?php echo htmlspecialchars($noticia['titulo']); ?>">
             </div>
             <?php endif; ?>
 
