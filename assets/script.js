@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
 function atualizarImagem() {
             const urlInput = document.getElementById('url-imagem');
             const imagem = document.getElementById('preview-imagem');

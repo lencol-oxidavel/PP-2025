@@ -39,40 +39,36 @@ if ((int)$dadosUsuario['jornalista'] !== 1) {
 $stmt->close();
 ?>
 
-<div class="maincontainer">
-    <main>
-        <form method="post" action="#" class="editor-form" onsubmit="return false;">
-            <article class="noticia-completa">
-                <h1>
-                    <input type="text" id="titulo" name="titulo" placeholder="Título da notícia" required>
-                </h1>
+    <div class="maincontainer">
+        <main>
+            <form method="post" action="./action/salvar_noticia.php" class="editor-form">
+                <article class="noticia-completa">
+                    <h1>
+                        <input type="text" id="titulo" name="titulo" placeholder="Título da notícia" required>
+                    </h1>
 
-                <p class="data">
-                    Data = Horario do submit
                     <input type="datetime-local" id="data_criacao" name="data_criacao" hidden>
-                </p>
 
-                
-                <div class="imagem-noticia">
-                    <img id="preview-imagem" src="https://img.freepik.com/fotos-premium/desenho-de-fundo-abstrato-hd-cor-verde-oliveira_851755-74064.jpg?semt=ais_hybrid&w=740" alt="Imagem da notícia">
-                </div>
+                    <div class="imagem-noticia">
+                        <img id="preview-imagem" src="https://img.freepik.com/fotos-premium/desenho-de-fundo-abstrato-hd-cor-verde-oliveira_851755-74064.jpg" alt="Imagem da notícia">
+                    </div>
 
-                <p>Atenção: copie o endereço da imagem não o do link</p>
-                <input type="url" id="url-imagem" name="foto" placeholder="Insira a URL da imagem" oninput="atualizarImagem()">
+                    <p>Atenção: copie o endereço da imagem, não o do link</p>
+                    <input type="url" id="url-imagem" name="foto" placeholder="Insira a URL da imagem" oninput="atualizarImagem()" required>
 
-                <p class="descricao">
-                    <textarea id="descricao" name="descricao" placeholder="Descrição curta da notícia" rows="4" required></textarea>
-                </p>
+                    <p class="descricao">
+                        <textarea id="descricao" name="descricao" placeholder="Descrição curta da notícia" rows="4" required></textarea>
+                    </p>
 
-                <div class="texto-completo">
-                    <textarea id="texto" name="texto" placeholder="Texto completo da notícia" rows="10" required></textarea>
-                </div>
+                    <div class="texto-completo">
+                        <textarea id="texto" name="texto" placeholder="Texto completo da notícia" rows="10" required></textarea>
+                    </div>
 
-                <br>
-                <button id="buttonedit" type="submit">Salvar Notícia</button>
-            </article>
-        </form>
-    </main>
+                    <br>
+                    <button id="buttonedit" type="submit">Salvar Notícia</button>
+                </article>
+            </form>
+        </main>
 
 
 <?php
