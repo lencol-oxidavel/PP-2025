@@ -77,9 +77,15 @@ if (mysqli_num_rows($resultado) > 0) {
         $foto = htmlspecialchars($dado['foto']);
 ?>
         <a href="noticia.php?noticiaID=<?php echo $id; ?>" class="Resultado">
+            <?php if (!empty($dado['foto'])): ?>
             <div class="Resultado-img">
-                <img src="./image/<?php echo $foto; ?>" alt="Imagem do resultado" />
+                <?php
+                    $foto = $dado['foto'];
+                    $fotoURL = (filter_var($foto, FILTER_VALIDATE_URL)) ? $foto : './image/' . $foto;
+                ?>
+                <img src="<?php echo htmlspecialchars($fotoURL); ?>" alt="<?php echo htmlspecialchars($noticia['titulo']); ?>">
             </div>
+            <?php endif; ?>
             <div class="Resultado-Texto">
                 <h2><?php echo $titulo; ?></h2>
                 <p><?php echo $descricao; ?></p>
@@ -130,6 +136,8 @@ if (mysqli_num_rows($resultado) > 0) {
         <?php endfor; ?>
     </div>
 <?php endif; ?>
+
+            <script src="script.js"></script>
 
 </body>
 </html>
