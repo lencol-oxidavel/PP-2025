@@ -20,6 +20,9 @@ if ($result && mysqli_num_rows($result) > 0) {
     <title>Neuralink</title>
     <link rel="icon" type="image/x-icon" href="image/imageb.png" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/style3.css">
+    <link rel="stylesheet" href="./assets/stylelogin.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 <body>
 

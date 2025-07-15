@@ -1,5 +1,9 @@
 <?php
-include_once './includes/_conexao.php';
+include_once './includes/_header.php';
+?>
+
+
+<?php
 
 $busca = '';
 $where = "";
@@ -40,104 +44,96 @@ if (!$resultado) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Neuralink - Notícias</title>
-    <link rel="stylesheet" href="./assets/style3.css" />
-    <link rel="icon" type="image/x-icon" href="image/imageb.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-</head>
-<body>
+<main>
+    <a href="index.php" class="voltar">&#10229; Voltar</a>
+    <div class="mainsearch">
+    
 
-<a href="index.php" class="voltar">&#10229; Voltar</a>
+    <form class="search-form" method="GET" action="">
+        <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input 
+                class="search-input" 
+                type="search" 
+                name="busca" 
+                placeholder="Pesquisar" 
+                value="<?php echo htmlspecialchars($busca); ?>"
+                autocomplete="off"
+            >
+        </div>
+    </form>
 
-<form class="search-form" method="GET" action="">
-    <div class="search">
-        <span class="search-icon material-symbols-outlined">search</span>
-        <input 
-            class="search-input" 
-            type="search" 
-            name="busca" 
-            placeholder="Pesquisar" 
-            value="<?php echo htmlspecialchars($busca); ?>"
-            autocomplete="off"
-        >
-    </div>
-</form>
-
-<?php
-if (mysqli_num_rows($resultado) > 0) {
-    while ($dado = mysqli_fetch_assoc($resultado)) {
-        $id = $dado['noticiaID'];
-        $titulo = htmlspecialchars($dado['titulo']);
-        $descricao = htmlspecialchars($dado['descricao']);
-        $foto = htmlspecialchars($dado['foto']);
-?>
-        <a href="noticia.php?noticiaID=<?php echo $id; ?>" class="Resultado">
-            <?php if (!empty($dado['foto'])): ?>
-            <div class="Resultado-img">
-                <?php
-                    $foto = $dado['foto'];
-                    $fotoURL = (filter_var($foto, FILTER_VALIDATE_URL)) ? $foto : './image/' . $foto;
-                ?>
-                <img src="<?php echo htmlspecialchars($fotoURL); ?>" alt="<?php echo htmlspecialchars($noticia['titulo']); ?>">
-            </div>
-            <?php endif; ?>
-            <div class="Resultado-Texto">
-                <h2><?php echo $titulo; ?></h2>
-                <p><?php echo $descricao; ?></p>
-            </div>
-        </a>
-<?php
-    }
-} else {
-    if ($busca !== '') {
-        echo '<p class="no-results">Nenhuma notícia encontrada para: ' . htmlspecialchars($busca) . '</p>';
+    <?php
+    if (mysqli_num_rows($resultado) > 0) {
+        while ($dado = mysqli_fetch_assoc($resultado)) {
+            $id = $dado['noticiaID'];
+            $titulo = htmlspecialchars($dado['titulo']);
+            $descricao = htmlspecialchars($dado['descricao']);
+            $foto = htmlspecialchars($dado['foto']);
+    ?>
+            <a href="noticia.php?noticiaID=<?php echo $id; ?>" class="Resultado">
+                <?php if (!empty($dado['foto'])): ?>
+                <div class="Resultado-img">
+                    <?php
+                        $foto = $dado['foto'];
+                        $fotoURL = (filter_var($foto, FILTER_VALIDATE_URL)) ? $foto : './image/' . $foto;
+                    ?>
+                    <img src="<?php echo htmlspecialchars($fotoURL); ?>" alt="<?php echo htmlspecialchars($noticia['titulo']); ?>">
+                </div>
+                <?php endif; ?>
+                <div class="Resultado-Texto">
+                    <h2><?php echo $titulo; ?></h2>
+                    <p><?php echo $descricao; ?></p>
+                </div>
+            </a>
+    <?php
+        }
     } else {
-        echo '<p class="no-results">Nenhuma notícia disponível no momento.</p>';
-    }
-}
-?>
-
-<?php if ($total_paginas > 1): ?>
-    <div class="paginacao">
-        <?php
-        $max_paginas_exibir = 10;
-
-        if ($total_paginas <= $max_paginas_exibir) {
-            $inicio = 1;
-            $fim = $total_paginas;
+        if ($busca !== '') {
+            echo '<p class="no-results">Nenhuma notícia encontrada para: ' . htmlspecialchars($busca) . '</p>';
         } else {
-            if ($pagina_atual < 6) {
-                $inicio = 1;
-                $fim = $max_paginas_exibir;
-            } else {
-                $inicio = $pagina_atual - 4;
-                $fim = $pagina_atual + 5;
+            echo '<p class="no-results">Nenhuma notícia disponível no momento.</p>';
+        }
+    }
+    ?>
 
-                if ($fim > $total_paginas) {
-                    $fim = $total_paginas;
-                    $inicio = $fim - ($max_paginas_exibir - 1);
-                    if ($inicio < 1) {
-                        $inicio = 1;
+    <?php if ($total_paginas > 1): ?>
+        <div class="paginacao">
+            <?php
+            $max_paginas_exibir = 10;
+
+            if ($total_paginas <= $max_paginas_exibir) {
+                $inicio = 1;
+                $fim = $total_paginas;
+            } else {
+                if ($pagina_atual < 6) {
+                    $inicio = 1;
+                    $fim = $max_paginas_exibir;
+                } else {
+                    $inicio = $pagina_atual - 4;
+                    $fim = $pagina_atual + 5;
+
+                    if ($fim > $total_paginas) {
+                        $fim = $total_paginas;
+                        $inicio = $fim - ($max_paginas_exibir - 1);
+                        if ($inicio < 1) {
+                            $inicio = 1;
+                        }
                     }
                 }
             }
-        }
 
-        for ($i = $inicio; $i <= $fim; $i++):
-        ?>
-            <a class="pagina-link <?php echo $i === $pagina_atual ? 'ativa' : ''; ?>" href="?busca=<?php echo urlencode($busca); ?>&pagina=<?php echo $i; ?>">
-                <?php echo $i; ?>
-            </a>
-        <?php endfor; ?>
-    </div>
-<?php endif; ?>
+            for ($i = $inicio; $i <= $fim; $i++):
+            ?>
+                <a class="pagina-link <?php echo $i === $pagina_atual ? 'ativa' : ''; ?>" href="?busca=<?php echo urlencode($busca); ?>&pagina=<?php echo $i; ?>">
+                    <?php echo $i; ?>
+                </a>
+            <?php endfor; ?>
+        </div>
+    <?php endif; ?>
+    <div>
 
-            <script src="script.js"></script>
-
-</body>
-</html>
+</main>
+<?php
+include_once './includes/_footer.php';
+?>

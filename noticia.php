@@ -31,9 +31,9 @@ $stmt->close();
 ?>
 
 <div class="maincontainer">
-    <main>
+    <main class="mainhome">
         <article class="noticia-completa">
-            <h1><?php echo htmlspecialchars($noticia['titulo']); ?></h1>
+            <h1 class="hmainhome"><?php echo htmlspecialchars($noticia['titulo']); ?></h1>
             <p class="data">
                 Publicado em <?php echo date('d/m/Y H:i', strtotime($noticia['data_criacao'])); ?>
             </p>

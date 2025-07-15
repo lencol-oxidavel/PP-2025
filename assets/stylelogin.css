@@ -31,7 +31,7 @@ label {
     font-size: 1.4vw;
 }
 
-h2 {
+.CLh2 {
     font-size: 1.65vw;
     padding-left: 5%;
     padding-top: 4%;
@@ -62,18 +62,20 @@ input::placeholder, select {
 
 button {
     height: 3vw;
+    width: 100%;
     font-size: 1.2vw;
     background-color: white;
     border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    align-self: center;
     border: 1px solid black;
 }
+
+
 .fradius {
     border-radius: 5px;
 }
 
-.login, .cadastro {
+.logincad, .cadastro {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -81,7 +83,7 @@ button {
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: aliceblue;
 }
-.login {
+.logincad {
     margin-left: 3%;
     align-self: center;
 }
@@ -95,14 +97,16 @@ html {
     height: 100%;
 }
 
-body {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;    
+.CLmain {
+    background: linear-gradient(290deg, #0700b8 0%, #00ff88 100%);
+}
+
+.bodycl {
+    justify-content: center;
     width: 100%;
     height: auto;
-    background: #020024;
-    background: linear-gradient(290deg, #0700b8 0%, #00ff88 100%);
+    padding-bottom: 3%;
+    
     /*
     background: linear-gradient(343deg, rgb(36 0 0) 0%, rgb(9 115 121) 50%, rgba(0, 212, 255, 1) 100%);
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
@@ -119,30 +123,25 @@ body {
 }
 
 .voltar {
-    position: absolute;
-    top: 2vw;
-    left: 2vw;
+    margin: 1vw 0vw 0vw 1vw;
+    width: 10%;
     font-size: 1.5vw;
     text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.33);
+    color: black;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     font-weight: bold;
     display: flex;
-    align-items: center;
-    gap: 0.5em;
 }
 
 .voltar:hover {
     background-color: rgba(0, 0, 0, 0.66);
+    color: white;
 }
 
 @media (max-width: 650px) {
     .voltar {
         font-size: 2.5vw;
-        top: 3vw;
-        left: 3vw;
         padding: 0.6em 1.2em;
     }
     

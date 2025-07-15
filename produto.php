@@ -3,8 +3,8 @@ include_once './includes/_header.php';
 ?>
 
 <div class="maincontainer">
-    <main>
-        <h1> O dispositivo </h1> 
+    <main class="mainhome">
+        <h1 class="hmainome"> O dispositivo </h1> 
             <p>O neuralink é feito de fios ultrafinos compostos de biomateriais biocompatíveis que minimizam a rejeição pelo corpo humano, os fios possuem eletrodos e são extremamente flexíveis, possibilitando realizar uma inserção no cérebro sem causar danos ao tecido.
                 Mais finos que um fio de cabelo e projetados para captar sinais elétricos de neurônios, os fios realizam esta função para mandar estes sinais para o chip implantado no paciente.</p>
         
