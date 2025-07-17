@@ -41,9 +41,9 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <a class="clash" href="./metodologia.php"><span>Metodologia</span></a>
                 <a class="clash" href="./sobrenos.php"><span>Sobre Nós</span></a>
                 <a class="clash pesq" href="./pesquisa.php">
-                    <span>
+                    <span class="spanpesq">
                         <img class="Solucao_da_crise_existencial_da_lupa" src="./image/Lupa_branca_maior.png" alt="" />
-                        <p>Pesquisar</p>
+                        <p class="ppesq">Pesquisar</p>
                     </span>
                 </a>
                 <?php if (isset($_SESSION['usuarioID']) && isset($_SESSION['jornalista']) && $_SESSION['jornalista'] == 1): ?>

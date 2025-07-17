@@ -1,7 +1,7 @@
 <aside>
     <div class="sidebar">
         <div class="imgad">
-            <a target="_blank" href="https://www.senacrs.com.br/home">
+            <a target="_blank" href="https://www.senacrs.com.br/escola/8ca9e0ba-6659-45f6-b22b-ce55558abbae">
                 <img class="imga" src="image/SenacAD.png" alt="Anuncio do senac" />
             </a>
         </div>

@@ -9,7 +9,11 @@ include_once './includes/_header.php';
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['usuarioID'])) {
-    echo "<p style='color: red; text-align: center;'>Acesso negado. Faça login primeiro.</p>";
+    echo "
+    <main class='acesso-negado'>
+        <p class='p-negado'>Acesso negado. Faça login primeiro.</p>
+    </main>
+    ";
     include_once './includes/_footer.php';
     exit;
 }

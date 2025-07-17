@@ -95,13 +95,13 @@ header {
     padding: 0.6vw 1vw;
 }
 
-.clash.pesq span {
+.clash.pesq .spanpesq {
     display: flex;
     align-items: center;
     gap: 0.5vw;
 }
 
-.clash.pesq span p {
+.clash.pesq .spanpesq .ppesq {
     margin: 0;
     font-size: 1.1vw;
     color: white;
@@ -185,6 +185,17 @@ main .texto-completo {
     color: #eee;
     text-align: justify;
 }
+/* main de acesso negado */
+.acesso-negado {
+    min-height: 400px;
+}
+.p-negado{
+    color: red; 
+    text-align: center;
+    margin-top: 15%;
+}
+
+/* main de acesso negado */
 
 /* Aside */
 aside {
@@ -288,14 +299,20 @@ footer {
 @media only screen and (max-width: 959px) {
     header,
     .flexh {
-        height: 8vw;
+        height: 10vw;
+    }
+    .clash {
+        font-size: 1.2vw;
     }
 }
 
 @media only screen and (max-width: 767px) {
     header,
     .flexh {
-        height: 8vw;
+        height: 10vw;
+    }
+    .clash {
+        font-size: 1.2vw;
     }
 }
 
@@ -303,5 +320,8 @@ footer {
     header,
     .flexh {
         height: 12vw;
+    }
+    .clash {
+        font-size: 1.2vw;
     }
 }
