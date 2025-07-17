@@ -195,6 +195,34 @@ aside {
     padding: 2% 0;
 }
 
+/* sombra do ad */
+
+.ad-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ad-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.ad-title {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* sombra do ad */
+
 .sidebar {
     display: flex;
     flex-direction: column;
