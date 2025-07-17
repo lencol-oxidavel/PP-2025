@@ -40,10 +40,10 @@ $stmt->close();
 ?>
 
     <div class="maincontainer">
-        <main>
+        <main class="mainhome">
             <form method="post" action="./action/salvar_noticia.php" class="editor-form">
                 <article class="noticia-completa">
-                    <h1>
+                    <h1 class="hmainhome">
                         <input type="text" id="titulo" name="titulo" placeholder="Título da notícia" required>
                     </h1>
 
