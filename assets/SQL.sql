@@ -173,7 +173,7 @@ CREATE TABLE interacoes (
   noticiaID INT NOT NULL,
   data_interacao DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (usuarioID, noticiaID),
-  CONSTRAINT fk_interacao_usuario FOREIGN KEY (usuarioID) REFERENCES usuarios(usuarioID) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT fk_int3aeracao_usuario FOREIGN KEY (usuarioID) REFERENCES usuarios(usuarioID) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT fk_interacao_noticia FOREIGN KEY (noticiaID) REFERENCES noticias(noticiaID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
