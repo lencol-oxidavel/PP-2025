@@ -24,3 +24,32 @@ function atualizarImagem() {
                 imagem.src = novaURL;
             }
         };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".editor-form");
+    const button = document.querySelector("#buttonedit");
+
+    function validarFormulario() {
+        const camposObrigatorios = form.querySelectorAll("[required]");
+        let valido = true;
+
+        camposObrigatorios.forEach(campo => {
+            if (!campo.value.trim() || !campo.checkValidity()) {
+                valido = false;
+            }
+        });
+
+        if (valido) {
+            button.classList.remove("invalido");
+            button.classList.add("valido");
+            button.disabled = false;
+        } else {
+            button.classList.remove("valido");
+            button.classList.add("invalido");
+            button.disabled = true;
+        }
+    }
+
+    form.addEventListener("input", validarFormulario);
+    validarFormulario();
+});

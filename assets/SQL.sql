@@ -46,7 +46,7 @@ INSERT INTO noticias (titulo, descricao, texto, foto, usuarioID, data_criacao) V
 ('Biotecnologia', 'Avanços no tratamento genético.', 'Novas técnicas prometem curas para doenças hereditárias.', 'gagov2.png', 1, '2025-07-08 14:30:00'),
 ('Educação online', 'Plataformas inovadoras ganham espaço.', 'Transformação digital no ensino em tempos modernos.', 'gago2.png', 1, '2025-07-08 15:00:00'),
 ('Mudanças climáticas', 'Impactos e soluções globais.', 'Discussão sobre o futuro do planeta e ações urgentes.', 'gagov2.png', 1, '2025-07-08 15:30:00'),
-('Ciência de dados', 'Big Data e análise preditiva.', 'Como dados estão mudando a forma de tomar decisões.', 'gago2.png', 1, '2025-07-08 16:00:00');
+('Ciência de dados', 'Big Data e análise preditiva.', 'Como dados estão mudando a forma de tomar decisões.', 'gago2.png', 1, '2025-07-08 16:00:00'),
 ('Notícia 120', 'Descrição da notícia 120', 'Texto completo da notícia 120', 'gago2.png', 1, '2025-07-07 09:27:25'),
 ('Notícia 119', 'Descrição da notícia 119', 'Texto completo da notícia 119', 'gagov2.png', 1, '2025-07-07 09:17:25'),
 ('Notícia 118', 'Descrição da notícia 118', 'Texto completo da notícia 118', 'gago2.png', 1, '2025-07-07 09:07:25'),
