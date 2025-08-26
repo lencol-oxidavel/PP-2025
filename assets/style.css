@@ -275,11 +275,43 @@ footer {
     background-color: rgb(11, 12, 18);
 
    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 2vw;
+   font-size: 1vw;
+   color: white;
+
 }
 .Container1 {
     display: flex;
-    width: 10%;
-    
+    width: auto;
+    align-items: center;
+    gap: 0.5vw;
+    max-width: 80%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.Container1 p{
+    margin: 0;
+    color: white;
+    font-size: 1vw;
+}
+
+.Neuralinka{
+    color: #00bfff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 0.5vw;
+    font-size: 1vw;
+
+}
+
+.Neuralinka:hover{
+    text-decoration: underline;
 }
 
 /* Footer */
