@@ -142,8 +142,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: #fff;
 }
+
+/* cores do texto */
+.descricao, .data, .texto-completo, .hmainhome, .mainhome {
+    color: white;
+}
+/* cores do texto */
 
 .hmainhome {
     margin-bottom: 0.5rem;
@@ -155,7 +160,6 @@ header {
 
 main .data {
     font-size: 0.9rem;
-    color: #ccc;
     margin-bottom: 1rem;
 }
 
@@ -173,16 +177,13 @@ main .imagem-noticia img {
 }
 
 main .descricao {
-    font-style: italic;
     font-size: 1.1rem;
-    color: #ddd;
     margin-bottom: 1.5rem;
 }
 
 main .texto-completo {
     font-size: 1rem;
     line-height: 1.6;
-    color: #eee;
     text-align: justify;
 }
 /* main de acesso negado */
@@ -349,7 +350,7 @@ footer {
     transform: scale(1.05);
 }
 /* editor específico */
-/* Responsivo */
+    /* Responsivo */
 @media only screen and (max-width: 959px) {
     header,
     .flexh {
