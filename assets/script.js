@@ -53,3 +53,26 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("input", validarFormulario);
     validarFormulario();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnPesquisa = document.getElementById("btn-pesquisa");
+    const btnNeuralink = document.getElementById("btn-neuralink");
+    const secaoPesquisa = document.getElementById("secao-pesquisa");
+    const secaoNeuralink = document.getElementById("secao-neuralink");
+
+    // Alternar para seção de pesquisa
+    btnPesquisa.addEventListener("click", function () {
+        secaoPesquisa.style.display = "block";
+        secaoNeuralink.style.display = "none";
+        btnPesquisa.classList.add("ativo");
+        btnNeuralink.classList.remove("ativo");
+    });
+
+    // Alternar para seção Neuralink Oficial
+    btnNeuralink.addEventListener("click", function () {
+        secaoPesquisa.style.display = "none";
+        secaoNeuralink.style.display = "block";
+        btnNeuralink.classList.add("ativo");
+        btnPesquisa.classList.remove("ativo");
+    });
+});
