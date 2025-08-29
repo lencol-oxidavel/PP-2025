@@ -142,33 +142,33 @@ if (!$resultado) {
 
         <!-- Seção Neuralink Oficial -->
         <div id="secao-neuralink" style="display: none;">
-            <a href="#" class="Resultado">
+            <a href="https://www.sciencefocus.com/future-technology/everything-you-need-to-know-about-neuralink" target="_blank"class="Resultado">
                 <div class="Resultado-img">
-                    <img src="./image/neuralink1.jpg" alt="Implante Neuralink">
+                    <img src="./image/image1.0.png" alt="Implante Neuralink">
                 </div>
                 <div class="Resultado-Texto">
-                    <h2>Implante Neuralink é testado com sucesso em humanos</h2>
-                    <p>Primeiro teste humano da Neuralink apresenta sinais promissores de comunicação direta com o cérebro.</p>
+                    <h2>Everything you need to know about Neuralink</h2>
+                    <p>What are the ethics behind monitoring someone’s every thought, deed and emotion?</p>
                 </div>
             </a>
 
-            <a href="#" class="Resultado">
+            <a href="https://www.lifewire.com/what-is-neuralink-8631427" target="_blank" class="Resultado">
                 <div class="Resultado-img">
-                    <img src="./image/neuralink2.jpg" alt="Controle com pensamento">
+                    <img src="./image/image2.0.png" alt="Controle com pensamento">
                 </div>
                 <div class="Resultado-Texto">
-                    <h2>Paciente controla cursor com o pensamento</h2>
-                    <p>Um voluntário consegue mover o mouse do computador usando apenas sinais cerebrais via chip da Neuralink.</p>
+                    <h2>What Is Neuralink?</h2>
+                    <p>This company hopes to build tech to let us talk to machines with our brains</p>
                 </div>
             </a>
 
-            <a href="#" class="Resultado">
+            <a href="https://www.mountbonnell.info/neural-nexus/mind-bending-tech-neuralinks-brain-threads-turn-thoughts-into-digital-commands#google_vignette" target="_blank" class="Resultado">
                 <div class="Resultado-img">
                     <img src="./image/neuralink3.jpg" alt="Elon Musk Neuralink">
                 </div>
                 <div class="Resultado-Texto">
-                    <h2>Elon Musk apresenta novos avanços da Neuralink</h2>
-                    <p>Musk revela atualizações do chip que promete restaurar mobilidade e visão em pacientes com deficiências severas.</p>
+                    <h2>Mind-Bending Tech: Neuralink's Brain Threads Turn Thoughts into Digital Commands!</h2>
+                    <p>Neuralink, Elon Musk's ambitious neurotechnology venture, aims to revolutionize the way humans interact with computers. The company has developed a brain-computer interface that allows direct communication between the human brain and external devices. Neuralink's system works by implanting tiny electrodes into the brain to detect and transmit neural signals, enabling users to control computers and other devices with their thoughts.</p>
                 </div>
             </a>
         </div>
